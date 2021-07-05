@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Rocketseat University - Notas</title>
+  </head>
+  <body>
+    <header class="bg-header">
+      <nav class="menu-navbar">
+        <div class="menu-logo">
+          <img
+            src="/assets/logo-rock-uni.svg"
+            alt="Rocketseat University logo"
+          />
+        </div>
+        <ul class="menu-navbar-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Notas</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </nav>
+      <div class="intro-header">
+        <h1>Bem vindo!</h1>
+        <p>
+          Por favor, insira as informações do aluno e a nota de desempenho em
+          sua matéria.
+        </p>
+      </div>
+    </header>
+
+    <section class="data-form">
+      <form>
+        <div class="form-item">
+          <label for="name">Nome completo do aluno</label>
+          <input type="text" id="name" placeholder="" required/>
+        </div>
+        <div class="form-item">
+          <label for="ra">RA</label>
+          <input type="number" id="ra" placeholder="#" required />
+        </div>
+        <div class="form-item">
+          <label for="subject">Materia</label>
+          <select id="subject"required>
+            <option></option>
+            <option value="React: Hooks">React Hooks</option>
+            <option value="React: Context API">Context API</option>
+            <option value="React: useState">useState</option>
+            <option value="React: Styled Components">Styled Components</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label for="score">Nota</label>
+          <input type="number" id="score" placeholder="" required>
+        </div>
+        <input type="submit" id="btn"></input>
+      </form>
+    </section>
+
+    <section>
+      <ul class="data"></ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
